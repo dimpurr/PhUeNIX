@@ -43,6 +43,6 @@
 		<?php echo get_option('clrs_link'); ?>
 </div></div>
 
-<!-- <?php get_sidebar(); ?> -->
+<?php // get_sidebar(); ?>
 
 <?php get_footer(); ?>
