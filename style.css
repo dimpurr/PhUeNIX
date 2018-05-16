@@ -64,6 +64,7 @@ td {vertical-align:top;}
 
 /* 通用样式 */
 
+a { color: #121314; text-decoration: none; border-bottom: 1px solid #121314; }
 .header_logo a:focus, .nav_huge a:focus { outline: none; }
 .clearfix { clear: both; }
 .round { -webkit-border-radius: 500px; -moz-border-radius: 500px; border-radius: 500px; }
@@ -103,4 +104,19 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .nav_main li a { display: inline-block; font-weight: normal; color: #eee; text-decoration: none; font-size: 13px; padding: 6px 2px; margin: 0 16px; }
 .nav_main li a:hover { border-bottom: 3px solid #ffffffdd; margin-bottom: -2px; padding-bottom: 5px; }
 
-.post { max-width: 700px; margin: 0 auto;background: #f3f3f3; }
+.post_ctn { max-width: 960px; margin: 0 auto; }
+.post_bg { margin: 32px 12px; background: #f3f3f3; border-radius: 3px; border: 1px solid #2d2d2d; padding: 0;  }
+.post_header { background: #000; color: #bdbdbd; display: flex; flex-flow: row; font-size: 13px; }
+.post_header a { text-decoration: none; color: #FFF; }
+.post_author, .post_cat { flex: 1; padding: 20px 20px; position: relative; }
+.post_author_avatar { float: left; margin-right: 12px; }
+.post_author_avatar img { border-radius: 100%; }
+.post_author_n { padding-top: 4px; }
+.post_author_desc { margin-top: 6px; display: block; height: 18px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.post_author_org::before, .post_author_college::before { content: "·"; }
+.post_author_org, .post_author_college { color: #6e6e6e; }
+.post_cat::before { content: "#"; color: #444444; font-size: 82px; position: absolute; left: 0; top: -12px; z-index: 0; }
+.post_cat_name, .post_cat_desc { position: relative; z-index: 2; }
+.post_cat_name { font-size: 13px; margin: 4px 0 6px 0; }
+.post_cat_desc p { display: none; margin: 0; }
+.post_cat_desc p:first-of-type { display: block; }
