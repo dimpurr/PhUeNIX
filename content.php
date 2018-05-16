@@ -1,19 +1,19 @@
 <div class="post">
 	<header class="post_header">
-		<a href="<?php echo get_the_author_meta('user_url'); ?>">
+		<div class="post_author">
+			<a class="post_author_avatar" href="<?php echo get_the_author_meta('user_url'); ?>">
 			<?php echo get_avatar( get_the_author_meta('ID'), 44 ); ?>
-		</a>
-		<div class="post_auth">
-			<a href="<?php echo get_the_author_meta('user_url'); ?>">
+			</a>
+			<a class="post_author_name" href="<?php echo get_the_author_meta('user_url'); ?>">
 				<?php echo get_the_author_meta('nickname'); ?>
 			</a>
-			<?php echo get_the_author_meta('first_name'); ?>
-			<?php echo get_the_author_meta('last_name'); ?>
-			<?php echo get_the_author_meta('description'); ?>
+			<span class="post_author_org"><?php echo get_the_author_meta('first_name'); ?></span>
+			<span class="post_author_college"><?php echo get_the_author_meta('last_name'); ?></span>
+			<span class="post_author_desc"><?php echo get_the_author_meta('description'); ?></span>
 		</div>
-		<span class="post_category">
-			<?php the_category(' ') ?>
-			<?php echo category_description( get_the_category()[0] ); ?>
+		<span class="post_cat">
+			<h3 class="post_cat_name"><?php the_category(' ') ?></h3>
+			<p class="post_cat_desc"><?php echo category_description( get_the_category()[0] ); ?></p>
 		</span>
 
 		<h2 class="post_title">
