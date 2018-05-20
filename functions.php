@@ -1,4 +1,7 @@
 <?php
+
+add_theme_support( 'title-tag' );
+
 // 加载菜单设置
 
 register_nav_menus(array(
