@@ -19,7 +19,7 @@
 
 <body <?php body_class(); ?>>
 
-<header>
+<header class="page_header">
 
 <nav id="nav_small" class="nav_small" role="navigation">
 	<?php wp_nav_menu( array( 'theme_location' => 'small' ) ); ?>
@@ -31,15 +31,15 @@
 
 <nav id="nav_huge" class="nav_huge">
 	<ul>
-		<li><a href="#">
+		<li><a href="http://byrio.org/hello-world-alpha/">
 			<h3 class="nav_huge_h">EXPLORER</h3>
 			<span class="nav_huge_desc">打开新世界的大门</span>
 		</a></li>
-		<li><a href="#">
+		<li><a href="http://dev.byr.moe/">
 			<h3 class="nav_huge_h">WIKI</h3>
 			<span class="nav_huge_desc">技术与创造在北邮</span>
 		</a></li>
-		<li><a href="#">
+		<li><a href="http://byrio.org/hello-world-alpha/">
 			<h3 class="nav_huge_h">JOIN US</h3>
 			<span class="nav_huge_desc">参与组织、讨论和活动</span>
 		</a></li>

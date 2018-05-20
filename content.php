@@ -29,24 +29,26 @@
 				</div>
 			</div>
 		</header>
-		<div class="post_h">
-			<h2 class="post_title">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); the_time('y/m/j - H:i') ?>">
-					<?php the_title(); ?>
-				</a>
-			</h2>
-			<div class="post_time">
-				<?php the_time('y/m/j H:i') ?>
+		<div class="post_main">
+			<div class="post_h">
+				<h2 class="post_title">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); the_time('y/m/j - H:i') ?>">
+						<?php the_title(); ?>
+					</a>
+				</h2>
+				<div class="post_time">
+					<?php the_time('y/m/j H:i') ?>
+				</div>
 			</div>
-		</div>
-		<div class="post_content">
-			<?php if ( get_post_format() == 'quote' ) { ?>
-			<a href="<?php the_permalink(); ?>">
+			<div class="post_content">
+				<?php if ( get_post_format() == 'quote' ) { ?>
+				<a href="<?php the_permalink(); ?>">
+					<?php the_content('Read More →'); ?>
+				</a>
+				<?php } else { ?>
 				<?php the_content('Read More →'); ?>
-			</a>
-			<?php } else { ?>
-			<?php the_content('Read More →'); ?>
-			<?php }; ?>
+				<?php }; ?>
+			</div>
 		</div>
 	</div>
 </div>

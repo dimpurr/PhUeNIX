@@ -18,10 +18,9 @@ html,button,input,select,textarea {font-family: "Segeo UI Mono", "Hiragino Sans 
 body {margin:0;font-size:1em;line-height:1.4;}
 ::-moz-selection {background: #999;color: #FFF; text-shadow:none;}
 ::selection {background: #999;color: #FFF; text-shadow:none;}
-a {color:#00e;}
-a:visited {color:#551a8b;}
-a:hover {color:#06e;}
-a:focus {outline:thin dotted;}
+a {color:#121314;}
+a:visited {color:#454647;}
+a:hover {color:#000;}
 a:hover,a:active {outline:0;}
 abbr[title] {border-bottom:1px dotted;}
 b,strong {font-weight:700;}
@@ -81,6 +80,8 @@ a { color: #121314; text-decoration: none; border-bottom: 1px solid #121314; }
 body { background: url('img/background.jpg'); background-size: cover; background-attachment: fixed; background-color: #000; background-position: center; }
 body::after { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.75); z-index: -10; }
 
+.page_header a { border: none; }
+
 .nav_small { margin-top: 5vh; text-align: center; }
 .nav_small li { display: inline; }
 .nav_small a { text-decoration: none; color: #eee; font-weight: bold; margin: 0 12px; font-size: 13px; }
@@ -120,3 +121,18 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .post_cat_name { font-size: 13px; margin: 4px 0 6px 0; }
 .post_cat_desc p { display: none; margin: 0; }
 .post_cat_desc p:first-of-type { display: block; }
+
+.post_title a { font-size: 32px; border: none; }
+.post_time { font-size: 14px; color: #777; margin-top: -16px; }
+.post_main { margin: 74px 100px; }
+.post_content p { margin: 32px 0; font-size: 18px; line-height: 1.75em; }
+.post_content a { border-bottom: 1px solid #DDD; }
+.post_content a:hover { border-bottom: 1px solid #AAA; text-decoration: none; transition: all ease 0.05s; }
+.post_content img { max-width: 100% !important; height: auto !important; }
+.wp-caption { width: 100% !important; margin-bottom: 48px; text-align: center; }
+.wp-caption a { border: none; }
+.wp-caption a:hover { border: none; opacity: 0.95; transition: all ease 0.05s; }
+.wp-caption img { border-radius: 2px; }
+.wp-caption p { margin: 2px 0; font-style: italic; color: #444; }
+.more-link { font-size: 13px; display: inline-block; border: 1px solid #DDD; height: 32px; line-height: 32px; padding: 0 20px; border-radius: 16px; vertical-align: middle; transition: border ease 0.2s; }
+.more-link:hover { border: 1px solid #777; }
