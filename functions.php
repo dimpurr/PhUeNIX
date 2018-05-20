@@ -1,4 +1,11 @@
 <?php
+// 加载菜单设置
+
+register_nav_menus(array(
+	'small' => __( ' 外链小导航','PhUeNIX' ),
+	'main' => __( '站点主导航','PhUeNIX' )
+));
+
 // 定义页面导航
 
 function c_pagenavi () {

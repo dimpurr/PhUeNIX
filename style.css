@@ -125,7 +125,9 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .post_title a { font-size: 32px; border: none; }
 .post_time { font-size: 14px; color: #777; margin-top: -16px; }
 .post_main { margin: 74px 100px; }
+.post_content { word-break: break-word; }
 .post_content p { margin: 32px 0; font-size: 18px; line-height: 1.75em; }
+.post_content ul li { font-size: 18px; margin: 10px 0; }
 .post_content a { border-bottom: 1px solid #DDD; }
 .post_content a:hover { border-bottom: 1px solid #AAA; text-decoration: none; transition: all ease 0.05s; }
 .post_content img { max-width: 100% !important; height: auto !important; }
