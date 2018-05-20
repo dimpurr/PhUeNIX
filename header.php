@@ -5,9 +5,8 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!--[if lt IE 9]>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
-	<![endif]-->
+	
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<?php wp_head(); ?>
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
@@ -35,7 +34,7 @@
 			<h3 class="nav_huge_h">EXPLORER</h3>
 			<span class="nav_huge_desc">打开新世界的大门</span>
 		</a></li>
-		<li><a href="http://dev.byr.moe/">
+		<li><a href="http://wiki.byr.moe/">
 			<h3 class="nav_huge_h">WIKI</h3>
 			<span class="nav_huge_desc">技术与创造在北邮</span>
 		</a></li>
