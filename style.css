@@ -143,13 +143,14 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .more-link:hover { border: 1px solid #777; }
 
 .single-post .header_logo { width: 400px; float: left; margin: 0; margin-top: -10px; margin-left: 20px; }
-.single-post .nav_huge { float: right; margin: 0; margin-top: -5px; margin-bottom: 15px; }
+.single-post .nav_huge, .single-post .nav_small { margin-bottom: 12px; }
+.single-post .nav_huge { float: right; margin: 0; margin-top: -5px; }
 .single-post .nav_huge li a::before, .single-post .nav_huge li a .nav_huge_desc { display: none; }
 .single-post .nav_huge li a { margin: 0 12px; padding: 0; transition: color ease 0.1s; }
 .single-post .nav_huge li a, .single-post .nav_small a { color: #ddd; }
 .single-post .nav_huge li a:hover, .single-post .nav_small a:hover { color: #aaa; }
 .single-post .nav_huge li h3 { font-size: 13px; }
-.single-post .nav_small { text-align: right; float: right; margin: 0; margin-right: 38px; margin-top: -5px; margin-bottom: 15px; }
+.single-post .nav_small { text-align: right; float: right; margin: 0; margin-right: 38px; margin-top: -5px; }
 .single-post .nav_small a { font-weight: normal; }
 .single-post .nav_main { text-align: right; margin: 35px 0 30px 0; opacity: 0.7; }
 .single-post .nav_main li a { color: #ccc; }
