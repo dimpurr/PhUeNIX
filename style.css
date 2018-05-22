@@ -142,7 +142,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .more-link { font-size: 13px; display: inline-block; border: 1px solid #DDD; height: 32px; line-height: 32px; padding: 0 20px; border-radius: 16px; vertical-align: middle; transition: border ease 0.2s; }
 .more-link:hover { border: 1px solid #777; }
 
-.single-post .header_logo { width: 400px; float: left; margin: 0; margin-top: -10px; margin-left: 20px; }
+.single-post .header_logo { width: 400px; float: left; margin: 0; margin-top: -14px; margin-left: 20px; }
 .single-post .nav_huge, .single-post .nav_small { margin-bottom: 12px; }
 .single-post .nav_huge { float: right; margin: 0; margin-top: -5px; }
 .single-post .nav_huge li a::before, .single-post .nav_huge li a .nav_huge_desc { display: none; }
