@@ -171,5 +171,15 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 	.post_header { flex-flow: column; }
 	.post_author { border-bottom: 1px solid #2d2d2d; }
 	.post_main { margin: 40px 10px; }
-	.post_content p, .post_content ul li { font-size: 16px; }
+	.single-post .post { padding: 10px 10px 40px 10px; }
+	.single-post .post_bg { margin: 0; }
+	.single-post .post_content p, .post_content ul li { font-size: 16px; }
+	.single-post .nav_huge { display: none; }
+	.single-post .nav_small, .single-post .header_logo { float: none; }
+	.single-post .nav_small { margin: 20px 0 20px 0; text-align: center; }
+	.single-post .nav_main { text-align: center; }
+	.single-post .header_logo { max-width: 100%; box-sizing: border-box; }
+	.single-post .header_logo img { max-width: 100%; }
+	.single-post .post_author, .single-post .post_cat { border-bottom: 1px solid #DDD; }
+	.single-post .post_header { margin: -10px -10px; }
 }
