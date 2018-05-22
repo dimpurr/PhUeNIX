@@ -84,7 +84,8 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 
 .nav_small { margin-top: 5vh; text-align: center; }
 .nav_small li { display: inline; }
-.nav_small a { text-decoration: none; color: #eee; font-weight: bold; margin: 0 12px; font-size: 13px; }
+.nav_small a { text-decoration: none; color: #eee; font-weight: bold; margin: 0 12px; font-size: 13px; transition: color ease 0.1s; }
+.nav_small a:hover { color: #ccc; }
 
 .header_logo { margin: 10vh 0; padding: 0 24px; text-align: center; }
 .header_logo img { width: 550px; max-width: 100%; }
@@ -144,7 +145,8 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .header_logo { width: 400px; float: left; margin: 0; margin-top: -10px; }
 .single-post .nav_huge { float: right; margin: 0; }
 .single-post .nav_huge li a::before, .single-post .nav_huge li a .nav_huge_desc { display: none; }
-.single-post .nav_huge li a { margin: 0 12px; padding: 0; color: #eee; }
+.single-post .nav_huge li a { margin: 0 12px; padding: 0; color: #eee; transition: color ease 0.1s; }
+.single-post .nav_huge li a:hover { color: #ccc; }
 .single-post .nav_huge li h3 { font-size: 13px; }
 .single-post .nav_small { text-align: right; float: right; margin: 0; margin-right: 38px; }
 .single-post .nav_small a { font-weight: normal; }
@@ -156,8 +158,14 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .post_header a { border: none; color: #000; }
 .single-post .post_cat { text-shadow: 0 0 5px #FFF, 0 0 10px #FFF; }
 .single-post .post_cat::before { color: #DDD; }
+.single-post .header_logo, .single-post .nav_huge, .single-post .nav_small { z-index: 20; position: relative; }
+body.single-post { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 50%; }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+	.single-post .nav_huge { display: none; }
+}
+
+@media (max-width: 900px) {
 	.header_logo { margin: 30px 0; }
 	.nav_small { margin-bottom: -15px; opacity: 0.8; }
 	.nav_small a { font-size: 12px; margin: 0 8px; }
