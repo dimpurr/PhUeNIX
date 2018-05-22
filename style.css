@@ -104,7 +104,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .nav_main li { display: inline-block; }
 .nav_main li li { display: none; }
 .nav_main li a { display: inline-block; font-weight: normal; color: #eee; text-decoration: none; font-size: 13px; padding: 6px 2px; margin: 0 16px; }
-.nav_main li a:hover { border-bottom: 3px solid #ffffffdd; margin-bottom: -2px; padding-bottom: 5px; }
+.nav_main li a:hover, .current-post-ancestor a, .current-menu-parent a, .current-post-parent a { border-bottom: 3px solid #ffffffdd; margin-bottom: -2px; padding-bottom: 5px; }
 
 .post_ctn { max-width: 960px; margin: 0 auto; }
 .post_bg { margin: 32px 12px; background: #f3f3f3; border-radius: 3px; border: 1px solid #2d2d2d; padding: 0;  }
