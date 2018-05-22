@@ -1,7 +1,7 @@
 <?php wp_footer(); ?>
 
 <footer class="page_footer">
-	<a class="footer_fixed" id="footer_fixed" onclick="document.documentElement.scrollTop = 0">
+	<a class="footer_fixed" id="footer_fixed" onclick="document.documentElement.scrollTop = 0; document.body.scrollTop = 0">
 		<img src="<?=get_template_directory_uri(); ?>/img/footer-fixed.png" /><span class="up">^</span>
 	</a>
 	<p>
