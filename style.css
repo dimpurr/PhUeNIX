@@ -1,7 +1,7 @@
 /*
 Theme Name: PhUeNIX
 Theme URI: http://blog.dimpurr.com/PhUeNIX
-Version: 0.1
+Version: 0.2
 Author: Dimpurr@BYRIOSC
 Author URI: http://dimpurr.com
 Description: A HTML5 grey and one column WordPress theme.
@@ -15,7 +15,7 @@ audio:not([controls]) {display:none;}
 [hidden] {display:none;}
 html {font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 html,button,input,select,textarea {font-family: "Segeo UI Mono", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "Droid Sans Fallback", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", Sans; color:#222;}
-body {margin:0;font-size:1em;line-height:1.4;}
+body {margin:0;font-size:1em;line-height:1.4;word-wrap: break-word;}
 ::-moz-selection {background: #999;color: #FFF; text-shadow:none;}
 ::selection {background: #999;color: #FFF; text-shadow:none;}
 a {color:#121314;}
@@ -103,8 +103,8 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .nav_main ul ul { display: none; }
 .nav_main li { display: inline-block; }
 .nav_main li li { display: none; }
-.nav_main li a { display: inline-block; font-weight: normal; color: #eee; text-decoration: none; font-size: 13px; padding: 6px 2px; margin: 0 16px; }
-.nav_main li a:hover, .current-post-ancestor a, .current-menu-parent a, .current-post-parent a { border-bottom: 3px solid #ffffffdd; margin-bottom: -2px; padding-bottom: 5px; }
+.nav_main li a { display: inline-block; font-weight: normal; color: #ccc; text-decoration: none; font-size: 13px; padding: 6px 2px; margin: 0 16px; }
+.nav_main li a:hover, .nav_main li.current-post-ancestor a, .nav_main li.current-menu-parent a, .nav_main li.current-post-parent a { border-bottom: 3px solid #ffffffdd; margin-bottom: -2px; padding-bottom: 5px; color: #FFF; }
 
 .post_ctn { max-width: 960px; margin: 0 auto; }
 .post_bg { margin: 32px 12px; background: #f3f3f3; border-radius: 3px; border: 1px solid #2d2d2d; padding: 0;  }
@@ -142,15 +142,18 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .more-link { font-size: 13px; display: inline-block; border: 1px solid #DDD; height: 32px; line-height: 32px; padding: 0 20px; border-radius: 16px; vertical-align: middle; transition: border ease 0.2s; }
 .more-link:hover { border: 1px solid #777; }
 
-.single-post .header_logo { width: 400px; float: left; margin: 0; margin-top: -10px; }
-.single-post .nav_huge { float: right; margin: 0; }
+.single-post .header_logo { width: 400px; float: left; margin: 0; margin-top: -10px; margin-left: 20px; }
+.single-post .nav_huge { float: right; margin: 0; margin-top: -5px; }
 .single-post .nav_huge li a::before, .single-post .nav_huge li a .nav_huge_desc { display: none; }
-.single-post .nav_huge li a { margin: 0 12px; padding: 0; color: #eee; transition: color ease 0.1s; }
-.single-post .nav_huge li a:hover { color: #ccc; }
+.single-post .nav_huge li a { margin: 0 12px; padding: 0; transition: color ease 0.1s; }
+.single-post .nav_huge li a, .single-post .nav_small a { color: #ddd; }
+.single-post .nav_huge li a:hover, .single-post .nav_small a:hover { color: #aaa; }
 .single-post .nav_huge li h3 { font-size: 13px; }
-.single-post .nav_small { text-align: right; float: right; margin: 0; margin-right: 38px; }
+.single-post .nav_small { text-align: right; float: right; margin: 0; margin-right: 38px; margin-top: -5px; margin-bottom: 15px; }
 .single-post .nav_small a { font-weight: normal; }
-.single-post .nav_main { text-align: right; margin: 30px 0; opacity: 0.5; }
+.single-post .nav_main { text-align: right; margin: 35px 0 30px 0; opacity: 0.7; }
+.single-post .nav_main li a { color: #ccc; }
+.single-post .nav_main li a:hover, .single-post .nav_main li.current-post-ancestor a, .single-post .nav_main li.current-menu-parent a, .nav_main .single-post li.current-post-parent a { color: #fff; border-bottom: 1px solid #ffffffdd; margin-bottom: -2px; padding-bottom: 6px; }
 .single-post .post { background: #fff; padding: 40px; margin: 20px 0; }
 .single-post .post_bg { background: none; border: none; margin: 0 100px; }
 .single-post .post_main { margin-left: 0; margin-right: 0; margin-top: 40px; }
@@ -159,7 +162,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .post_cat { text-shadow: 0 0 5px #FFF, 0 0 10px #FFF; }
 .single-post .post_cat::before { color: #DDD; }
 .single-post .header_logo, .single-post .nav_huge, .single-post .nav_small { z-index: 20; position: relative; }
-body.single-post { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 50%; }
+body.single-post { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 -10%; }
 
 @media (max-width: 1200px) {
 	.single-post .nav_huge { display: none; }
