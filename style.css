@@ -148,7 +148,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .nav_huge li a::before, .single-post .nav_huge li a .nav_huge_desc { display: none; }
 .single-post .nav_huge li a { margin: 0 12px; padding: 0; transition: color ease 0.1s; }
 .single-post .nav_huge li a, .single-post .nav_small a { color: #ddd; }
-.single-post .nav_huge li a:hover, .single-post .nav_small a:hover { color: #aaa; }
+.single-post .nav_huge li a:hover, .single-post .nav_small a:hover { color: #fff; }
 .single-post .nav_huge li h3 { font-size: 13px; }
 .single-post .nav_small { text-align: right; float: right; margin: 0; margin-right: 38px; margin-top: -5px; }
 .single-post .nav_small a { font-weight: normal; }
@@ -164,6 +164,15 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .post_cat::before { color: #DDD; }
 .single-post .header_logo, .single-post .nav_huge, .single-post .nav_small { z-index: 20; position: relative; }
 body.single-post { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 -10%; }
+
+.page_footer { text-align: right; color: #888; font-size: 12px; padding: 30px 40px 30px 40px; margin-top: -20px; }
+.page_footer p { margin: 0; }
+.page_footer .wordpress { margin-left: 20px; }
+.page_footer a { color: #b0b0b0; border: none; }
+.page_footer a.footer_fixed { opacity: 0; position: fixed; left: 40px; bottom: 22px; height: 20px; padding: 4px 10px; border: 1px solid #DDD; background: #fff4; border-radius: 20px; line-height: 16px; vertical-align: middle; transition: background ease 0.1s; cursor: pointer; transition: opacity ease 0.2s; }
+.footer_fixed:hover { background: #eee4; }
+.footer_fixed img { max-height: 100%; }
+.footer_fixed .up { font-family: monospace; display: inline-block; color: #aaa; font-size: 14px; vertical-align: top; margin-left: 8px; padding-top: 5px; }
 
 @media (max-width: 1200px) {
 	.single-post .nav_huge { display: none; }
@@ -199,4 +208,6 @@ body.single-post { background-image: url('img/background-banner.jpg'); backgroun
 	.single-post .post_author, .single-post .post_cat { border-bottom: 1px solid #DDD; }
 	.single-post .post_header { margin: -20px -20px; }
 	body.single-post { background-size: auto 300px; background-position: center 0; }
+
+	.footer_fixed { display: none; }
 }

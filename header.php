@@ -12,6 +12,17 @@
 	<?php if ( is_user_logged_in() ) { // 适配 WordPress 顶部管理栏
 		echo '<style type="text/css" media="screen"> #float { top: 32px; } </style>' ;
 	} ?>
+
+	<script>
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+		if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+			document.getElementById("footer_fixed").style.opacity = 1;
+		} else {
+			document.getElementById("footer_fixed").style.opacity = 0;
+		}
+	}
+	</script> 
 </head>
 
 <body <?php body_class(); ?>>
