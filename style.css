@@ -66,14 +66,6 @@ td {vertical-align:top;}
 a { color: #121314; text-decoration: none; border-bottom: 1px solid #121314; }
 .header_logo a:focus, .nav_huge a:focus { outline: none; }
 .clearfix { clear: both; }
-.round { -webkit-border-radius: 500px; -moz-border-radius: 500px; border-radius: 500px; }
-.hide { display: none; }
-.box-shadow { box-shadow:0 0 10px #DDD; }
-.text-shadow { text-shadow: 0 0 8px #000; }
-.opacity { filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5; }
-.blur { -webkit-filter: blur(2px); -moz-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px); }
-.linear { background: -webkit-linear-gradient(top, rgba(200,200,200,0.3), rgba(0,0,0,0.7));
-	background: -moz-linear-gradient(linear, top, from(rgba(255,255, 255,0.1)), to(rgba(255,255,255,0.9))); }
 
 /* 基本样式 */
 
@@ -123,7 +115,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .post_cat_name, .post_cat_desc { position: relative; z-index: 2; }
 .post_cat_name { font-size: 13px; margin: 4px 0 6px 0; }
 .post_cat_desc p { display: none; margin: 0; }
-.post_cat_desc p:first-of-type { display: block; }
+.post_cat_desc p:first-of-type { display: block; height: 18px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 
 .post_title a { font-size: 32px; border: none; }
 .post_time { font-size: 14px; color: #777; margin-top: -16px; }
@@ -179,6 +171,7 @@ body.single-post { background-image: url('img/background-banner.jpg'); backgroun
 }
 
 @media (max-width: 900px) {
+	body { background-size: auto 100vh; }
 	.header_logo { margin: 30px 0; }
 	.nav_small { margin-bottom: -15px; opacity: 0.8; }
 	.nav_small a { font-size: 12px; margin: 0 8px; }
@@ -203,7 +196,7 @@ body.single-post { background-image: url('img/background-banner.jpg'); backgroun
 	.single-post .nav_small, .single-post .header_logo { float: none; }
 	.single-post .nav_small { margin: 20px 0 30px 0; text-align: center; }
 	.single-post .nav_main { text-align: center; }
-	.single-post .header_logo { max-width: 100%; box-sizing: border-box; margin-left: 0; margin-right: 0; }
+	.single-post .header_logo { max-width: 100%; box-sizing: border-box; margin-left: auto; margin-right: auto; }
 	.single-post .header_logo img { max-width: 100%; }
 	.single-post .post_author, .single-post .post_cat { border-bottom: 1px solid #DDD; }
 	.single-post .post_header { margin: -20px -20px; }
