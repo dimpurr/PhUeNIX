@@ -149,10 +149,10 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .nav_small { text-align: right; float: right; margin: 0; margin-right: 38px; }
 .single-post .nav_small a { font-weight: normal; }
 .single-post .nav_main { text-align: right; margin: 30px 0; opacity: 0.5; }
-.single-post .post { background: #f3f3f3; padding: 40px; margin: 20px 0; }
+.single-post .post { background: #fff; padding: 40px; margin: 20px 0; }
 .single-post .post_bg { background: none; border: none; margin: 0 100px; }
-.single-post .post_main { margin-left: 0; margin-right: 0; }
-.single-post .post_header { background: none; color: #777; }
+.single-post .post_main { margin-left: 0; margin-right: 0; margin-top: 40px; }
+.single-post .post_header { margin: -20px -20px; background: none; color: #777; }
 .single-post .post_header a { border: none; color: #000; }
 .single-post .post_cat { text-shadow: 0 0 5px #FFF, 0 0 10px #FFF; }
 .single-post .post_cat::before { color: #DDD; }
