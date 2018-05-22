@@ -2,10 +2,10 @@
 	<div class="post_bg">
 		<header class="post_header">
 			<div class="post_author">
+				<a class="post_author_avatar" href="<?php echo get_the_author_meta('user_url'); ?>">
+					<?php echo get_avatar( get_the_author_meta('ID'), 44 ); ?>
+				</a>
 				<div class="post_author_n">
-					<a class="post_author_avatar" href="<?php echo get_the_author_meta('user_url'); ?>">
-						<?php echo get_avatar( get_the_author_meta('ID'), 44 ); ?>
-					</a>
 					<a class="post_author_name" href="<?php echo get_the_author_meta('user_url'); ?>">
 						<?php echo get_the_author_meta('nickname'); ?>
 					</a>
