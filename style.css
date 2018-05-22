@@ -170,7 +170,7 @@ body.single-post { background-image: url('img/background-banner.jpg'); backgroun
 .page_footer .wordpress { margin-left: 20px; }
 .page_footer a { color: #b0b0b0; border: none; }
 .page_footer a.footer_fixed { opacity: 0; position: fixed; left: 40px; bottom: 22px; height: 20px; padding: 4px 10px; border: 1px solid #dddddd77; background: #fff2; border-radius: 20px; line-height: 16px; vertical-align: middle; transition: background ease 0.1s; cursor: pointer; transition: opacity ease 0.2s; }
-.footer_fixed:hover { background: #eee4; }
+.page_footer a.footer_fixed:hover { border-color: #ddddddaa; }
 .footer_fixed img { max-height: 100%; }
 .footer_fixed .up { font-family: monospace; display: inline-block; color: #aaa; font-size: 14px; vertical-align: top; margin-left: 8px; padding-top: 5px; }
 
