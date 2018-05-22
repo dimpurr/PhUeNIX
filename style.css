@@ -143,7 +143,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .more-link:hover { border: 1px solid #777; }
 
 .single-post .header_logo { width: 400px; float: left; margin: 0; margin-top: -10px; margin-left: 20px; }
-.single-post .nav_huge { float: right; margin: 0; margin-top: -5px; }
+.single-post .nav_huge { float: right; margin: 0; margin-top: -5px; margin-bottom: 15px; }
 .single-post .nav_huge li a::before, .single-post .nav_huge li a .nav_huge_desc { display: none; }
 .single-post .nav_huge li a { margin: 0 12px; padding: 0; transition: color ease 0.1s; }
 .single-post .nav_huge li a, .single-post .nav_small a { color: #ddd; }
