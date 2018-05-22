@@ -111,7 +111,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .post_header a { text-decoration: none; color: #FFF; }
 .post_author, .post_cat { flex: 1; padding: 20px 20px; position: relative; }
 .post_author { border-bottom: 1px solid #2d2d2d; }
-.post_author_avatar { float: left; margin-right: 12px; }
+.post_author_avatar { float: left; margin-right: 12px; height: 44px; width: 44px; }
 .post_author_avatar img { border-radius: 100%; }
 .post_author_n { color: #6e6e6e; padding-top: 4px; margin-left: 52px; height: 18px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 .post_author_name { color: #FFF; }
@@ -144,7 +144,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 @media (max-width: 600px) {
 	.header_logo { margin: 30px 0; }
 	.nav_small { margin-bottom: -15px; opacity: 0.8; }
-	.nav_small a { font-size: 12px; }
+	.nav_small a { font-size: 12px; margin: 0 8px; }
 	.nav_main ul { padding: 0; }
 	.nav_huge { margin: 60px 0; }
 	.nav_huge ul { display: flex; flex-flow: row; }
@@ -154,4 +154,5 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 	.nav_main li a { margin: 0 6px; }
 	.post_header { flex-flow: column; }
 	.post_main { margin: 40px 10px; }
+	.post_content p { font-size: 16px; }
 }
