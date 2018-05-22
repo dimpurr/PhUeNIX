@@ -190,4 +190,5 @@ body.single-post { background-image: url('img/background-banner.jpg'); backgroun
 	.single-post .header_logo img { max-width: 100%; }
 	.single-post .post_author, .single-post .post_cat { border-bottom: 1px solid #DDD; }
 	.single-post .post_header { margin: -10px -10px; }
+	body.single-post { background-size: auto 300px; background-position: center 0; }
 }
