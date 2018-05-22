@@ -107,7 +107,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .nav_main li a:hover, .nav_main li.current-post-ancestor a, .nav_main li.current-menu-parent a, .nav_main li.current-post-parent a { border-bottom: 3px solid #ffffffdd; margin-bottom: -2px; padding-bottom: 5px; color: #FFF; }
 
 .post_ctn { max-width: 960px; margin: 0 auto; }
-.post_bg { margin: 32px 12px; background: #f3f3f3; border-radius: 3px; border: 1px solid #2d2d2d; padding: 0;  }
+.post_bg { margin: 32px 12px; border-radius: 3px; border: 1px solid #2d2d2d; padding: 0; background: #fff; /* background: #f3f3f3; */ }
 .post_header { background: #000; color: #bdbdbd; display: flex; flex-flow: row; font-size: 13px; }
 .post_header a { text-decoration: none; color: #FFF; }
 .post_author, .post_cat { flex: 1; padding: 20px 20px; position: relative; }
@@ -181,18 +181,22 @@ body.single-post { background-image: url('img/background-banner.jpg'); backgroun
 	.nav_main { margin: 30px 0; }
 	.nav_main li a { margin: 0 6px; }
 	.post_header { flex-flow: column; }
+	.post_author, .post_cat { padding-top: 10px; padding-bottom: 10px; }
 	.post_author { border-bottom: 1px solid #2d2d2d; }
 	.post_main { margin: 40px 10px; }
-	.single-post .post { padding: 10px 10px 40px 10px; }
+	.post_cat::before { margin-left: 18px; font-size: 62px; }
+	.post_cat { padding-left: 74px; }
+
+	.single-post .post { padding: 20px 20px 40px 20px; }
 	.single-post .post_bg { margin: 0; }
 	.single-post .post_content p, .post_content ul li { font-size: 16px; }
 	.single-post .nav_huge { display: none; }
 	.single-post .nav_small, .single-post .header_logo { float: none; }
 	.single-post .nav_small { margin: 20px 0 20px 0; text-align: center; }
 	.single-post .nav_main { text-align: center; }
-	.single-post .header_logo { max-width: 100%; box-sizing: border-box; }
+	.single-post .header_logo { max-width: 100%; box-sizing: border-box; margin-left: 0; margin-right: 0; }
 	.single-post .header_logo img { max-width: 100%; }
 	.single-post .post_author, .single-post .post_cat { border-bottom: 1px solid #DDD; }
-	.single-post .post_header { margin: -10px -10px; }
+	.single-post .post_header { margin: -20px -20px; }
 	body.single-post { background-size: auto 300px; background-position: center 0; }
 }
