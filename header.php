@@ -9,10 +9,6 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
-	<?php if ( is_user_logged_in() ) { // 适配 WordPress 顶部管理栏
-		echo '<style type="text/css" media="screen"> #float { top: 32px; } </style>' ;
-	} ?>
-
 	<script>
 	window.onscroll = function() {scrollFunction()};
 	function scrollFunction() {
