@@ -171,7 +171,7 @@ body.single-post { background-image: url('img/background-banner.jpg'); backgroun
 }
 
 @media (max-width: 900px) {
-	body { background-size: auto 100vh; }
+	body { background-size: cover; }
 	.header_logo { margin: 30px 0; }
 	.nav_small { margin-bottom: -15px; opacity: 0.8; }
 	.nav_small a { font-size: 12px; margin: 0 8px; }
