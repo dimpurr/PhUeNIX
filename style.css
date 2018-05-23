@@ -200,7 +200,7 @@ body.single-post, body.single-post::after { background-image: url('img/backgroun
 	.single-post .header_logo img { max-width: 100%; }
 	.single-post .post_author, .single-post .post_cat { border-bottom: 1px solid #DDD; }
 	.single-post .post_header { margin: -20px -20px; }
-	body.single-post { background-size: auto 300px; background-position: center 0; }
+	body.single-post, body.single-post::after { background-size: auto 300px; background-position: center 0; }
 
 	.page_footer { padding: 20px 20px; }
 	.page_footer .wordpress, .page_footer .theme { display: block; }
