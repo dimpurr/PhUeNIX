@@ -1,7 +1,7 @@
 /*
 Theme Name: PhUeNIX
 Theme URI: http://blog.dimpurr.com/PhUeNIX
-Version: 0.3
+Version: 0.4
 Author: Dimpurr@BYRIOSC
 Author URI: http://dimpurr.com
 Description: A HTML5 grey and one column WordPress theme.
@@ -151,6 +151,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .post { background: #fff; padding: 40px; margin: 20px 0; }
 .single-post .post_bg { background: none; border: none; margin: 0 100px; }
 .single-post .post_main { margin-left: 0; margin-right: 0; margin-top: 40px; }
+.single-post .post_main > div { clear: right; }
 .single-post .post_header { margin: -20px -20px; background: none; color: #777; }
 .single-post .post_header a { border: none; color: #000; }
 .single-post .post_cat { text-shadow: 0 0 5px #FFF, 0 0 10px #FFF; }
