@@ -157,8 +157,10 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .post_cat { text-shadow: 0 0 5px #FFF, 0 0 10px #FFF; }
 .single-post .post_cat::before { color: #DDD; }
 .single-post .header_logo, .single-post .nav_huge, .single-post .nav_small { z-index: 20; position: relative; }
-body.single-post, .single-post .page-footer { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 -10%; background-repeat: repeat; }
+body.single-post { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 -10%; background-repeat: repeat; }
 body.single-post::after { display: none; }
+/*.single-post .page_footer::before { content: ""; display: block; position: fixed; : bottom: 0; left: 0; margin: 0; padding: 0; height: 100px; width: 100%; background: rgba(0,0,0,0.75); z-index: -8; }*/
+.single-post .page_footer::after { content: ""; display: block; position: fixed; bottom: 0; left: 0; margin: 0; padding: 0; height: 100px; width: 100%; z-index: -9; background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-attachment: fixed; background-color: #000; background-position: bottom; background-repeat: no-repeat; }
 
 .page_footer { text-align: right; color: #888; font-size: 12px; padding: 30px 40px 30px 40px; margin-top: -20px; }
 .page_footer p { margin: 0; }
