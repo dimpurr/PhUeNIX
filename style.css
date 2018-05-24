@@ -71,7 +71,7 @@ a { color: #121314; text-decoration: none; border-bottom: 1px solid #121314; }
 
 body { background: url('img/background.jpg'); background-size: cover; background-attachment: fixed; background-color: #000; background-position: center; }
 body::before { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.75); z-index: -8; }
-body::after { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; z-index: -9; background-image: url('img/background.jpg'); background-size: auto 100vh; background-attachment: fixed; background-color: #000; background-position: center; background-repeat: no-repeat; }
+body::after { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; z-index: -20; background-image: url('img/background.jpg'); background-size: auto 100vh; background-attachment: fixed; background-color: #000; background-position: center; background-repeat: no-repeat; }
 
 .page_header a { border: none; }
 
@@ -158,9 +158,9 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .post_cat::before { color: #DDD; }
 .single-post .header_logo, .single-post .nav_huge, .single-post .nav_small { z-index: 20; position: relative; }
 body.single-post { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 -10%; background-repeat: repeat; }
-body.single-post::after { display: none; }
+body.single-post::after { display: none; background-image: url('img/background-banner.jpg'); }
 /*.single-post .page_footer::before { content: ""; display: block; position: fixed; : bottom: 0; left: 0; margin: 0; padding: 0; height: 100px; width: 100%; background: rgba(0,0,0,0.75); z-index: -8; }*/
-.single-post .page_footer::after {content: "";display: block;position: fixed;bottom: 0;left: 0;margin: 0;padding: 0;height: 100px;width: 100%;z-index: -9;background-image: url('img/background-banner.jpg');background-size: 100% auto;background-attachment: fixed;background-color: #000;background-position: bottom;background-repeat: no-repeat;}
+.single-post .page_footer::after {content: "";display: block;position: fixed;bottom: 0;left: 0;margin: 0;padding: 0;height: 100px;width: 100%;z-index: -9;background-image: url('img/background-banner.jpg');background-size: 100% auto;background-attachment: fixed;background-color: #fff;background-position: bottom;background-repeat: no-repeat;}
 
 .page_footer { text-align: right; color: #888; font-size: 12px; padding: 30px 40px 30px 40px; margin-top: -20px; }
 .page_footer p { margin: 0; }
@@ -204,8 +204,9 @@ body.single-post::after { display: none; }
 	.single-post .header_logo img { max-width: 100%; }
 	.single-post .post_author, .single-post .post_cat { border-bottom: 1px solid #DDD; }
 	.single-post .post_header { margin: -20px -20px; }
-	body.single-post::after { display: block; }
-	body.single-post, body.single-post::after { background-size: auto 900px; background-position: center 90%; }
+	body.single-post::after { display: block;  }
+	body.single-post, body.single-post::after { background-size: auto 350px; background-position: center top; }
+	.single-post .page_footer::after { z-index: -10; }
 
 	.page_footer { padding: 20px 20px; }
 	.page_footer .wordpress, .page_footer .theme { display: block; }
