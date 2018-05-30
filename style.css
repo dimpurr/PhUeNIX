@@ -8,7 +8,7 @@ Description: A HTML5 grey and one column WordPress theme.
 Text Domain: clearision
 */
 
-/* é‡ç½®æ ·å¼ */
+/* Normalize */
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {display:block;}
 audio,canvas,video {display:inline;zoom:1;}
 audio:not([controls]) {display:none;}
@@ -61,13 +61,13 @@ input:invalid, textarea:invalid {background-color:#FAFAFA;}
 table {border-collapse:collapse;border-spacing:0;}
 td {vertical-align:top;}
 
-/* é€šç”¨æ ·å¼ */
+/* Global */
 
 a { color: #121314; text-decoration: none; border-bottom: 1px solid #121314; }
 .header_logo a:focus, .nav_huge a:focus { outline: none; }
 .clearfix { clear: both; }
 
-/* åŸºæœ¬æ ·å¼ */
+/* Style */
 
 body { background: url('img/background.jpg'); background-size: cover; background-attachment: fixed; background-color: #000; background-position: center; }
 body::before { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.75); z-index: -8; }
@@ -109,7 +109,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .post_author_n { color: #6e6e6e; padding-top: 4px; margin-left: 52px; height: 18px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 .post_author_name { color: #FFF; }
 .post_author_desc { margin-top: 6px; display: block; height: 18px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
-.post_author_org::before, .post_author_college::before { content: "Â·"; }
+.post_author_org::before, .post_author_college::before { content: " ·"; }
 .post_author_org, .post_author_college { color: #6e6e6e; }
 .post_cat::before { content: "#"; color: #444444; font-size: 82px; position: absolute; left: 0; top: -12px; z-index: 0; }
 .post_cat { text-shadow: 0 0 5px #000, 0 0 10px #000; }
