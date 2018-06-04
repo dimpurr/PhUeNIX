@@ -242,6 +242,7 @@ body.single-post::after { display: none; background-image: url('img/background-b
 	.post_cat::before { margin-left: 18px; font-size: 62px; }
 	.post_cat { padding-left: 74px; }
 
+	.comment_ctn { padding: 0; }
 	.single-post .post { padding: 20px 20px 40px 20px; }
 	.single-post .post_bg { margin: 0; }
 	.single-post .post_content p, .post_content ul li { font-size: 16px; }
