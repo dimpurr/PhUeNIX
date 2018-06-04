@@ -69,6 +69,8 @@ a { color: #121314; text-decoration: none; border-bottom: 1px solid #121314; }
 
 /* 基本样式 */
 
+.post_ctn, #page_nav, .comment_list, .comment_nav, .comment_form { max-width: 960px; margin: 0 auto; }
+
 body { background: url('img/background.jpg'); background-size: cover; background-attachment: fixed; background-color: #000; background-position: center; }
 body::before { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.75); z-index: -8; }
 body::after { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; z-index: -9; background-image: url('img/background.jpg'); background-size: auto 100vh; background-attachment: fixed; background-color: #000; background-position: center; background-repeat: no-repeat; }
@@ -99,7 +101,6 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .nav_main li a { display: inline-block; font-weight: normal; color: #ccc; text-decoration: none; font-size: 13px; padding: 6px 2px; margin: 0 16px; }
 .nav_main li a:hover, .nav_main li.current-post-ancestor a, .nav_main li.current-menu-parent a, .nav_main li.current-post-parent a { border-bottom: 3px solid #ffffffdd; margin-bottom: -2px; padding-bottom: 5px; color: #FFF; }
 
-.post_ctn { max-width: 960px; margin: 0 auto; }
 .post_bg { margin: 32px 12px; border-radius: 3px; border: 1px solid #2d2d2d; padding: 0; background: #fff; /* background: #f3f3f3; */ }
 .post_header { background: #000; color: #bdbdbd; display: flex; flex-flow: row; font-size: 13px; }
 .post_header a { text-decoration: none; color: #FFF; }
@@ -158,6 +159,10 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .header_logo, .single-post .nav_huge, .single-post .nav_small { z-index: 20; position: relative; }
 body.single-post, body.single-post::after { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 -10%; }
 
+#page_nav { text-align: right; margin-top: 8px; margin-bottom: 40px; }
+#page_nav .page-numbers { display: inline-block; border: 1px solid #dddddd77; padding: 0 8px; text-align: center; background: #fffd; margin: 0 4px; border-radius: 13px; line-height: 26px; vertical-align: middle; color: #777; font-size: 13px; }
+#page_nav .current, #page_nav .prev, #page_nav .next { background: #1117; color: #eee; }
+
 .page_footer { text-align: right; color: #888; font-size: 12px; padding: 30px 40px 30px 40px; margin-top: -20px; }
 .page_footer p { margin: 0; }
 .page_footer .wordpress { margin-left: 20px; }
@@ -166,6 +171,48 @@ body.single-post, body.single-post::after { background-image: url('img/backgroun
 .page_footer a.footer_fixed:hover { border-color: #ddddddaa; }
 .footer_fixed img { max-height: 100%; }
 .footer_fixed .up { font-family: monospace; display: inline-block; color: #aaa; font-size: 14px; vertical-align: top; margin-left: 8px; padding-top: 5px; }
+
+.post-navigation { text-align: right; border: 1px solid #DDD; border-width: 1px 0; }
+.post-navigation div { display: inline-block; }
+.post-navigation h2 { display: none }
+.post-navigation a { border: none; }
+.post-navigation .nav-previous a:before {content: "← "; }
+.post-navigation .nav-next a:after { content: " →"; }
+
+.comment_list { padding: 0; margin-top: 40px; }
+.comment_list li.comment, .comment_list li.pingback { position: relative; display: block; margin: 0; padding: 0;}
+/* .comment_list li.pingback .comment-body::before { content: ""; display: inline; width: 10px; } */
+.comment_list li.pingback .comment-body a { display: inline-block; margin: 14px 0; }
+/* .comment_list li.pingback::before { content: ""; } */
+.comment_list li.comment.depth-1, .comment_list li.pingback { border-bottom: 1px solid #DDD; }
+.comment_list li ol.children { margin: 0; padding: 0 }
+.comment_list li ol.children li { border-top: 1px solid #f7f7f7; }
+/* .comment_list li ol.children li.comment::before { background: #2C2C2C; } */
+.comment_list li ol.children li.comment .fn::before { content: "➥ "; color: #DDD; }
+.comment-body { border-top: 1px solid #FFF; border-top: 1px solid transparent; margin-top: -1px; height: 100%; }
+.comment_list .avatar { float: left; margin: -4px 16px 12px 12px; border: 1px solid #DDD; border-radius: 2px; }
+.comment_list .comment-author { font-size: 14px; padding-top: 14px; line-height: 22px; }
+.comment_list .comment-author .fn { float: left; margin-right: 10px; }
+.comment_list .comment-meta a { font-size: 14px; border: none; color: #aaa; }
+.comment_list .says { display: none; }
+.comment_list .comment-reply-link { font-size: 14px; z-index: 1; position: absolute; right: 18px; top: 16px; display: block; transition: opacity linear 0.1s; }
+.comment_list .comment-body p { margin-left: 86px; margin-right: 84px; margin-top: 6px; font-size: 15px; }
+.comment_nav { z-index: 1; position: relative; text-align: right; background: #FFF; border-bottom: 1px solid #DDD; }
+.comment_nav a { border: none; }
+
+.comment-form { margin-bottom: 60px; }
+.comment-form textarea { display: block; width: 100%; border: none; border-bottom: 1px solid #DDD; background: none; padding: 12px 0; }
+.comment_form_meta { margin-right: 200px;}
+.comment-form input { display: inline-block; width: 200px; border: none; border-bottom: 1px solid #DDD; background: none; padding: 12px 0;  margin-right: 10px; }
+.form-submit { float: right; margin-top: -40px; }
+.form-submit input { border: 1px solid #DDD; border-radius: 26px; padding: 8px 0; margin-right: 0; width: 150px; }
+.form-submit input:hover { border-color: #777; }
+
+.page_nav { position: relative; margin-left: -160px; margin-right: 1px; margin-bottom: -3px; text-align: right; background: #FFF; }
+.page_nav .page-numbers, .comment_nav a, .post-navigation a { display: inline-block; margin: 0 -4px 0 0; padding: 16px 26px; text-align: center; }
+.page_nav a:hover, .comment_nav a:hover, .post-navigation a:hover { background: #F5F5F5; text-decoration: none; transition: all ease 0.05s; }
+.page_nav .current { background: #777; color: #EEE; line-height: 24px; }
+.page_nav .dots { cursor: default; }
 
 @media (max-width: 1200px) {
 	.single-post .nav_huge { display: none; }
