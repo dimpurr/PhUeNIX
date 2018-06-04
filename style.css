@@ -69,7 +69,7 @@ a { color: #121314; text-decoration: none; border-bottom: 1px solid #121314; }
 
 /* Style */
 
-.post_ctn, #page_nav, .comment_list, .comment_nav, .comment_form { max-width: 960px; margin: 0 auto; }
+.post_ctn, #page_nav, .comment_ctn { max-width: 960px; margin: 0 auto; }
 
 body { background: url('img/background.jpg'); background-size: cover; background-attachment: fixed; background-color: #000; background-position: center; }
 body::before { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.75); z-index: -8; }
@@ -183,7 +183,8 @@ body.single-post::after { display: none; background-image: url('img/background-b
 .post-navigation .nav-previous a:before {content: "← "; }
 .post-navigation .nav-next a:after { content: " →"; }
 
-.comment_list { padding: 0; margin-top: 40px; }
+.comment_ctn { padding: 0 100px; box-sizing: border-box; margin-top: 60px; }
+.comment_list { margin-top: 40px; padding: 0; margin: 0; }
 .comment_list li.comment, .comment_list li.pingback { position: relative; display: block; margin: 0; padding: 0;}
 /* .comment_list li.pingback .comment-body::before { content: ""; display: inline; width: 10px; } */
 .comment_list li.pingback .comment-body a { display: inline-block; margin: 14px 0; }
@@ -194,6 +195,7 @@ body.single-post::after { display: none; background-image: url('img/background-b
 /* .comment_list li ol.children li.comment::before { background: #2C2C2C; } */
 .comment_list li ol.children li.comment .fn::before { content: "➥ "; color: #DDD; }
 .comment-body { border-top: 1px solid #FFF; border-top: 1px solid transparent; margin-top: -1px; height: 100%; }
+#comments { border-top: 1px solid #ddd; }
 .comment_list .avatar { float: left; margin: -4px 16px 12px 12px; border: 1px solid #DDD; border-radius: 2px; }
 .comment_list .comment-author { font-size: 14px; padding-top: 14px; line-height: 22px; }
 .comment_list .comment-author .fn { float: left; margin-right: 10px; }
@@ -206,8 +208,8 @@ body.single-post::after { display: none; background-image: url('img/background-b
 
 .comment-form { margin-bottom: 60px; }
 .comment-form textarea { display: block; width: 100%; border: none; border-bottom: 1px solid #DDD; background: none; padding: 12px 0; }
-.comment_form_meta { margin-right: 200px;}
-.comment-form input { display: inline-block; width: 200px; border: none; border-bottom: 1px solid #DDD; background: none; padding: 12px 0;  margin-right: 10px; }
+.comment_form_meta { margin-right: 160px;}
+.comment-form input { display: inline-block; width: 180px; border: none; border-bottom: 1px solid #DDD; background: none; padding: 12px 0;  margin-right: 10px; }
 .form-submit { float: right; margin-top: -40px; }
 .form-submit input { border: 1px solid #DDD; border-radius: 26px; padding: 8px 0; margin-right: 0; width: 150px; }
 .form-submit input:hover { border-color: #777; }

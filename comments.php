@@ -1,3 +1,4 @@
+<div class="comment_ctn">
 <?php if ( post_password_required() ) { return; } ?>
 
 <ol id="comments" class="comment_list">
@@ -46,4 +47,5 @@
 
 <div class="comment_form">
 	<?php comment_form($comments_args); ?>
+</div>
 </div>
