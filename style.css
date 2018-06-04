@@ -1,14 +1,14 @@
 /*
 Theme Name: PhUeNIX
 Theme URI: http://blog.dimpurr.com/PhUeNIX
-Version: 0.3
+Version: 0.4
 Author: Dimpurr@BYRIOSC
 Author URI: http://dimpurr.com
 Description: A HTML5 grey and one column WordPress theme.
 Text Domain: clearision
 */
 
-/* 重置样式 */
+/* Normalize */
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {display:block;}
 audio,canvas,video {display:inline;zoom:1;}
 audio:not([controls]) {display:none;}
@@ -61,19 +61,19 @@ input:invalid, textarea:invalid {background-color:#FAFAFA;}
 table {border-collapse:collapse;border-spacing:0;}
 td {vertical-align:top;}
 
-/* 通用样式 */
+/* Global */
 
 a { color: #121314; text-decoration: none; border-bottom: 1px solid #121314; }
 .header_logo a:focus, .nav_huge a:focus { outline: none; }
 .clearfix { clear: both; }
 
-/* 基本样式 */
+/* Style */
 
 .post_ctn, #page_nav, .comment_list, .comment_nav, .comment_form { max-width: 960px; margin: 0 auto; }
 
 body { background: url('img/background.jpg'); background-size: cover; background-attachment: fixed; background-color: #000; background-position: center; }
 body::before { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.75); z-index: -8; }
-body::after { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; z-index: -9; background-image: url('img/background.jpg'); background-size: auto 100vh; background-attachment: fixed; background-color: #000; background-position: center; background-repeat: no-repeat; }
+body::after { content: ""; display: block; position: fixed; top: 0; left: 0; margin: 0; padding: 0; height: 100%; width: 100%; z-index: -20; background-image: url('img/background.jpg'); background-size: auto 100vh; background-attachment: fixed; background-color: #000; background-position: center; background-repeat: no-repeat; }
 
 .page_header a { border: none; }
 
@@ -110,7 +110,7 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .post_author_n { color: #6e6e6e; padding-top: 4px; margin-left: 52px; height: 18px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 .post_author_name { color: #FFF; }
 .post_author_desc { margin-top: 6px; display: block; height: 18px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
-.post_author_org::before, .post_author_college::before { content: "·"; }
+.post_author_org::before, .post_author_college::before { content: " ·"; }
 .post_author_org, .post_author_college { color: #6e6e6e; }
 .post_cat::before { content: "#"; color: #444444; font-size: 82px; position: absolute; left: 0; top: -12px; z-index: 0; }
 .post_cat { text-shadow: 0 0 5px #000, 0 0 10px #000; }
@@ -152,12 +152,16 @@ body::after { content: ""; display: block; position: fixed; top: 0; left: 0; mar
 .single-post .post { background: #fff; padding: 40px; margin: 20px 0; }
 .single-post .post_bg { background: none; border: none; margin: 0 100px; }
 .single-post .post_main { margin-left: 0; margin-right: 0; margin-top: 40px; }
+.single-post .post_main > div { clear: right; }
 .single-post .post_header { margin: -20px -20px; background: none; color: #777; }
 .single-post .post_header a { border: none; color: #000; }
 .single-post .post_cat { text-shadow: 0 0 5px #FFF, 0 0 10px #FFF; }
 .single-post .post_cat::before { color: #DDD; }
 .single-post .header_logo, .single-post .nav_huge, .single-post .nav_small { z-index: 20; position: relative; }
-body.single-post, body.single-post::after { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 -10%; }
+body.single-post { background-image: url('img/background-banner.jpg'); background-size: 100% auto; background-position: 0 -10%; background-repeat: repeat; }
+body.single-post::after { display: none; background-image: url('img/background-banner.jpg'); }
+/*.single-post .page_footer::before { content: ""; display: block; position: fixed; : bottom: 0; left: 0; margin: 0; padding: 0; height: 100px; width: 100%; background: rgba(0,0,0,0.75); z-index: -8; }*/
+.single-post .page_footer::after {content: "";display: block;position: fixed;bottom: 0;left: 0;margin: 0;padding: 0;height: 100px;width: 100%;z-index: -9;background-image: url('img/background-banner.jpg');background-size: 100% auto;background-attachment: fixed;background-color: #fff;background-position: bottom;background-repeat: no-repeat;}
 
 #page_nav { text-align: right; margin-top: 8px; margin-bottom: 40px; }
 #page_nav .page-numbers { display: inline-block; border: 1px solid #dddddd77; padding: 0 8px; text-align: center; background: #fffd; margin: 0 4px; border-radius: 13px; line-height: 26px; vertical-align: middle; color: #777; font-size: 13px; }
@@ -247,7 +251,9 @@ body.single-post, body.single-post::after { background-image: url('img/backgroun
 	.single-post .header_logo img { max-width: 100%; }
 	.single-post .post_author, .single-post .post_cat { border-bottom: 1px solid #DDD; }
 	.single-post .post_header { margin: -20px -20px; }
-	body.single-post, body.single-post::after { background-size: auto 300px; background-position: center 0; }
+	body.single-post::after { display: block;  }
+	body.single-post, body.single-post::after { background-size: auto 350px; background-position: center top; }
+	.single-post .page_footer::after { z-index: -10; }
 
 	.page_footer { padding: 20px 20px; }
 	.page_footer .wordpress, .page_footer .theme { display: block; }
