@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <canvas id="i" width="610" height="610"></canvas>
+    <script>
+        var canvas = document.querySelector('#i');
+        var context = canvas.getContext('2d');
+        context.beginPath();
+        var radius = 120;
+        context.arc(300,300,radius,0,360,0);
+        context.closePath();
+        context.strokeStyle = "#8BDBFC";
+        context.lineWidth='5';
+        context.stroke();
+        context.beginPath();
+        var wave = 4;
+        var angleStart = 260;
+        var angle = 500;
+        for (var i=angleStart; i < angleStart+angle; ++i) {
+            var p = ((i-angleStart) * wave * 540 / angle % 360);
+            var cp = 20 * Math.sin(Math.sqrt(p / 3.6) * 36 / 180 * Math.PI) + radius;
+            context.lineTo(Math.cos(i / 180 * Math.PI) * cp + 300, cp * Math.sin(i / 180 * Math.PI) + 300);
+        }
+        //context.closePath();
+        context.strokeStyle = "#F8EEF1";
+        context.stroke();
+        context.closePath();
+    </script>
+</body>
+</html>
