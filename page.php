@@ -19,13 +19,7 @@
 				</div>
 			</div>
 			<div class="post_content">
-				<?php if ( get_post_format() == 'quote' ) { ?>
-				<a href="<?php the_permalink(); ?>">
-					<?php the_content('Read More →'); ?>
-				</a>
-				<?php } else { ?>
 				<?php the_content('Read More →'); ?>
-				<?php }; ?>
 			</div>
 		</div>
 	</div>
